@@ -1,6 +1,7 @@
 module com.example.labjavafx {
     requires javafx.controls;
     requires javafx.fxml;
+    requires static lombok;
 
 
     opens com.example.labjavafx to javafx.fxml; // Abre el paquete principal

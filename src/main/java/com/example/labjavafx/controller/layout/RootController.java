@@ -2,7 +2,13 @@ package com.example.labjavafx.controller.layout;
 
 import javafx.fxml.FXML;
 import javafx.scene.layout.VBox;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class RootController {
 
     @FXML
@@ -10,19 +16,4 @@ public class RootController {
     @FXML
     private RightController rightController;
 
-    public RightController getRightController() {
-        return rightController;
-    }
-
-    public void setRightController(RightController rightController) {
-        this.rightController = rightController;
-    }
-
-    public VBox getContent() {
-        return content;
-    }
-
-    public void setContent(VBox content) {
-        this.content = content;
-    }
 }
