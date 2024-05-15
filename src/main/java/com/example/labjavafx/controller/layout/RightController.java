@@ -6,15 +6,14 @@ import javafx.scene.layout.VBox;
 public class RightController {
 
     @FXML
-    public VBox dynamicContent;
+    public VBox content;
 
-    public VBox getDynamicContent() {
-        return dynamicContent;
+    public VBox getContent() {
+        return content;
     }
 
-    @FXML
-    public void setDynamicContent(VBox content) {
-        this.dynamicContent.getChildren().clear();
-        this.dynamicContent.getChildren().add(content);
+    public void setContent(VBox content) {
+        this.content.getChildren().clear();
+        this.content.getChildren().add(content);
     }
 }

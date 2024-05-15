@@ -1,9 +1,12 @@
 package com.example.labjavafx.controller.layout;
 
 import javafx.fxml.FXML;
+import javafx.scene.layout.VBox;
 
 public class RootController {
 
+    @FXML
+    private VBox content;
     @FXML
     private RightController rightController;
 
@@ -15,10 +18,11 @@ public class RootController {
         this.rightController = rightController;
     }
 
-    @Override
-    public String toString() {
-        return "RootController{" +
-                "rightController=" + rightController +
-                '}';
+    public VBox getContent() {
+        return content;
+    }
+
+    public void setContent(VBox content) {
+        this.content = content;
     }
 }

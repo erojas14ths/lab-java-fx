@@ -4,9 +4,9 @@
 <?import javafx.scene.layout.*?>
 
 
-<VBox fx:id="dynamicContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.example.labjavafx.controller.layout.RightController">
+      fx:controller="com.example.labjavafx.controller.layout.RightController" fx:id="content">
     <children>
         <Label text="Label" id="right-label"/>
     </children>
