@@ -10,8 +10,8 @@ public class LeftController {
     @FXML
     public void loadContentSayHello(MouseEvent mouseEvent) {
 
-        RootController rootController = Util.getController("/com/example/labjavafx/controller/layout/root.fxml");
-        HelloController helloController = Util.getController("/com/example/labjavafx/controller/content/hello.fxml");
+        RootController rootController = Util.getController("/fxml/layout/root.fxml");
+        HelloController helloController = Util.getController("/fxml/content/hello.fxml");
 
         rootController.getRightController().getContent().getChildren().clear();
         rootController.getRightController().getContent().getChildren().add(helloController.getContent());
