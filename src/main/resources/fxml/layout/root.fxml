@@ -3,9 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-      prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.example.labjavafx.controller.layout.RootController" fx:id="content">
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="content" fx:controller="com.example.labjavafx.controller.layout.RootController"
+      maxHeight="600.0" maxWidth="800.0">
     <children>
         <fx:include source="top.fxml" fx:id="top"/>
         <SplitPane dividerPositions="0.2568922305764411">

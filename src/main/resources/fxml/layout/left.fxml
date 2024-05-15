@@ -6,14 +6,14 @@
 <Accordion xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
            fx:controller="com.example.labjavafx.controller.layout.LeftController">
     <panes>
-        <TitledPane animated="false" text="untitled 1">
+        <TitledPane animated="false" text="Tools">
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                     <children>
                         <VBox layoutX="-1.0" layoutY="1.0">
                             <children>
                                 <Label text="Hello" onMouseClicked="#loadContentSayHello"/>
-                                <Label text="Action 2"/>
+                                <Label text="Base64" onMouseClicked="#onEncodeBase64"/>
                                 <Label text="Action 3"/>
                             </children>
                         </VBox>
