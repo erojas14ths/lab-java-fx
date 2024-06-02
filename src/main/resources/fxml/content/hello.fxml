@@ -4,9 +4,8 @@
 <?import javafx.scene.layout.*?>
 
 
-<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
-      fx:id="content" fx:controller="com.example.labjavafx.controller.content.HelloController"
-      maxHeight="500.0" maxWidth="700.0">
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="content" fx:controller="com.example.labjavafx.controller.content.HelloController">
     <children>
         <Button mnemonicParsing="false" text="Button" id="boton-hello"/>
     </children>

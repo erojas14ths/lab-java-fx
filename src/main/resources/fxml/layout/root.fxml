@@ -3,21 +3,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
-      fx:id="content" fx:controller="com.example.labjavafx.controller.layout.RootController"
-      maxHeight="600.0" maxWidth="800.0">
+<VBox fx:id="content" prefHeight="600.0" maxHeight="600.0" prefWidth="800.0" maxWidth="800.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.labjavafx.controller.layout.RootController">
     <children>
-        <fx:include source="top.fxml" fx:id="top"/>
-        <SplitPane dividerPositions="0.2568922305764411">
+        <fx:include fx:id="top" maxWidth="800.0" source="top.fxml"/>
+        <SplitPane dividerPositions="0.1">
             <items>
-                <AnchorPane>
+                <AnchorPane maxHeight="600.0" maxWidth="200.0">
                     <children>
-                        <fx:include source="left.fxml" fx:id="left"/>
+                        <fx:include fx:id="left" prefHeight="600.0" prefWidth="200.0" source="left.fxml"/>
                     </children>
                 </AnchorPane>
-                <AnchorPane prefHeight="573.0" prefWidth="585.0">
+                <AnchorPane maxHeight="600.0" maxWidth="600.0">
                     <children>
-                        <fx:include source="right.fxml" fx:id="right"/>
+                        <fx:include fx:id="right" prefHeight="600.0" prefWidth="600.0" source="right.fxml"/>
                     </children>
                 </AnchorPane>
             </items>

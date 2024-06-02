@@ -3,34 +3,28 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
-      fx:id="content" fx:controller="com.example.labjavafx.controller.content.Base64Controller"
-      maxHeight="500.0" maxWidth="700.0">
-    <AnchorPane>
+<VBox fx:id="content" maxHeight="600.0" maxWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labjavafx.controller.content.Base64Controller">
+    <AnchorPane prefHeight="600" prefWidth="600">
         <children>
-            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="543.0" prefWidth="670.0">
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0">
                 <items>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="569.0">
+                    <AnchorPane>
                         <children>
-                            <Label layoutX="14.0" layoutY="14.0" text="BASE 64"/>
-                            <Separator layoutX="14.0" layoutY="30.0" prefWidth="580.0"/>
-                            <Label layoutX="18.0" layoutY="88.0" text="Ingrese el valor"/>
-                            <TextArea fx:id="taInputEncode" layoutX="14.0" layoutY="120.0" prefHeight="99.0"
-                                      prefWidth="580.0" wrapText="true"/>
-                            <Button layoutX="14.0" layoutY="229.0" mnemonicParsing="false" onAction="#onEncrypt"
-                                    text="Procesar"/>
-                            <Button layoutX="88.0" layoutY="229.0" mnemonicParsing="false" onAction="#onClear"
-                                    text="Limpiar"/>
-                            <Label layoutX="14.0" layoutY="46.0" text="Selecciona una opción"/>
-                            <ChoiceBox fx:id="selectOption" layoutX="144.0" layoutY="42.0" prefWidth="150.0"/>
+                            <Label layoutX="14.0" layoutY="14.0" text="BASE 64" />
+                            <Separator layoutX="14.0" layoutY="30.0" prefWidth="500.0" />
+                            <Label layoutX="18.0" layoutY="88.0" text="Ingrese el valor" />
+                            <TextArea fx:id="taInputEncode" layoutX="14.0" layoutY="120.0" prefHeight="100.0" prefWidth="500.0" wrapText="true" />
+                            <Button layoutX="14.0" layoutY="229.0" mnemonicParsing="false" onAction="#onEncrypt" text="Procesar" />
+                            <Button layoutX="88.0" layoutY="229.0" mnemonicParsing="false" onAction="#onClear" text="Limpiar" />
+                            <Label layoutX="14.0" layoutY="46.0" text="Selecciona una opción" />
+                            <ChoiceBox fx:id="selectOption" layoutX="144.0" layoutY="42.0" prefWidth="150.0" />
                         </children>
                     </AnchorPane>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="268.0" prefWidth="487.0">
+                    <AnchorPane>
                         <children>
-                            <Label layoutX="17.0" layoutY="33.0" text="Resultado"/>
-                            <Separator layoutX="17.0" layoutY="49.0" prefWidth="580.0"/>
-                            <TextArea fx:id="taOutputEncode" layoutX="13.0" layoutY="70.0" prefHeight="140.0"
-                                      prefWidth="580.0" wrapText="true"/>
+                            <Label layoutX="17.0" layoutY="33.0" text="Resultado" />
+                            <Separator layoutX="17.0" layoutY="49.0" prefWidth="500.0" />
+                            <TextArea fx:id="taOutputEncode" layoutX="13.0" layoutY="70.0" prefHeight="100.0" prefWidth="500.0" wrapText="true" />
                         </children>
                     </AnchorPane>
                 </items>

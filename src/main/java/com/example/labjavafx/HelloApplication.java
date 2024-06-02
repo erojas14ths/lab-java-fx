@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/fxml/layout/root.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setScene(scene);
-        stage.setResizable(false);
+        stage.setResizable(true);
         Image image = new Image(getClass().getResourceAsStream("/icons/retro-tv.ico"));
         stage.getIcons().add(image);
         stage.setTitle("Hands-On Tools");
